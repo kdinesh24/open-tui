@@ -1,0 +1,4 @@
+node_modules/
+.babelrc
+app.js
+package-lock.json

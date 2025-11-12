@@ -1,0 +1,24 @@
+{
+  "name": "typing-speed-tester",
+  "version": "1.0.0",
+  "description": "A Monkeytype-like typing speed tester",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "bun run dist/index.js"
+  },
+  "keywords": [
+    "typing",
+    "speed",
+    "tester",
+    "tui"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@opentui/core": "^0.1.41",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
