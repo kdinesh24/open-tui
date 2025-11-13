@@ -1,6 +1,8 @@
-# Terminal Typing Speed Tester
+# tyxt
 
-A Monkeytype-like typing speed tester built with @opentui/core.
+A Monkeytype-like typing speed tester for your terminal, built with @opentui/core.
+
+**⚠️ Bun is required to run this application** - `@opentui/core` uses Bun-specific APIs and will not work with Node.js alone.
 
 ## Features
 
@@ -10,18 +12,47 @@ A Monkeytype-like typing speed tester built with @opentui/core.
 - Running timer
 - Backspace/Delete support
 - Restart test with Enter
-- Rose Pine color theme
+- Multiple color themes (Rose Pine, Vesper, Catppuccin, Noir)
 
-## Installation
+## Prerequisites
+
+**Bun is required** to run this application. Install it from [bun.sh](https://bun.sh):
 
 ```bash
-npm install
+curl -fsSL https://bun.sh/install | bash
 ```
 
-## Run
+Or on Windows:
+```powershell
+powershell -c "irm bun.sh/install.ps1 | iex"
+```
+
+## Installation & Usage
+
+### Option 1: Run with bunx (recommended)
+```bash
+bunx tyxt
+```
+
+### Option 2: Install with npm/npx
+Even though the package is installed via npm, **Bun is still required to run it**:
 
 ```bash
-npm start
+npm install -g tyxt
+tyxt
+```
+
+Or run directly:
+```bash
+npx tyxt
+```
+
+If Bun is not installed, you'll see a helpful error message with installation instructions.
+
+### Option 3: Install with Bun
+```bash
+bun install -g tyxt
+tyxt
 ```
 
 ## Controls

@@ -1,21 +1,45 @@
 {
-  "name": "typing-speed-tester",
-  "version": "1.0.0",
-  "description": "A Monkeytype-like typing speed tester",
+  "name": "tyxt",
+  "version": "1.0.6",
+  "description": "A terminal typing speed tester built with @opentui/core (requires Bun)",
   "main": "dist/index.js",
   "type": "module",
+  "bin": {
+    "tyxt": "./bin/tyxt.cjs"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
   "scripts": {
-    "build": "tsc",
-    "start": "bun run dist/index.js"
+    "build": "bun run build.js",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "typing",
     "speed",
     "tester",
-    "tui"
+    "tui",
+    "terminal",
+    "cli",
+    "monkeytype",
+    "bun"
   ],
-  "author": "",
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "author": "kdinesh24",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kdinesh24/open-tui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdinesh24/open-tui/issues"
+  },
+  "homepage": "https://github.com/kdinesh24/open-tui#readme",
   "dependencies": {
     "@opentui/core": "^0.1.41",
     "@types/node": "^24.10.1",

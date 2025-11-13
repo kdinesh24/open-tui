@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env bun
 import { createCliRenderer, BoxRenderable, TextRenderable, RGBA } from "@opentui/core";
 
 interface Theme {
